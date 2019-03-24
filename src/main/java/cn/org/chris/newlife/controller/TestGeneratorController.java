@@ -40,6 +40,7 @@ public class TestGeneratorController {
                               @RequestBody TestGenerator testGenerator) {
         boolean flag = testGeneratorService.save(testGenerator);
         Assert.isTrue(flag, "新增失败！");
+        System.out.println("测试构建");
         return ApiResult.success();
     }
 
