@@ -11,6 +11,7 @@
     <groupId>chris.org.cn</groupId>
     <artifactId>newlife</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>newlife</name>
     <description>xiao zi sheng huo project for Spring Boot</description>
 
@@ -30,14 +31,14 @@
         <druid-spring-boot-starter>1.1.10</druid-spring-boot-starter>
     </properties>
 
-   <!-- <profiles>
+    <profiles>
         <profile>
             <id>prod</id>
             <properties>
                 <env>prod</env>
             </properties>
         </profile>
-    </profiles>-->
+    </profiles>
 
     <dependencies>
         <dependency>
@@ -134,7 +135,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-        <defaultGoal>compile</defaultGoal>
+        <!--<defaultGoal>compile</defaultGoal>-->
     </build>
 
 </project>
